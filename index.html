@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Object Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
+    </head>
+
+    <body background="tech.jpg">
+        <center>
+        <h3 id="heading">Ai Object Finder<br>
+            <h5>
+              Note: The input name that you give should match the name in the COCOssd model *Then only it will work*
+            </h5>
+        </h3>
+        <br>
+        <input type="text" placeholder="Object Name:" id="tinput">
+        <br><br>
+        <button onclick="start()" class="btn btn-success">Start</button>
+        <br>
+        <h3 class="btn btn-danger" id="status"></h3>
+        <h3 class="btn btn-warning" id="found"></h3>
+    </center>
+     
+    <section id="hints">
+        <div class="line">
+            <h3>HINTS:<br><hr> Write</h3>
+            
+            <h4>
+             *cell phone* for Mobile phone
+             <br>
+             *bottle* for Water bottle
+             <br>
+             *person* for Person
+             <br>
+             *remote* for TV Remote
+            </h4>
+        </div>
+    </section>
+    </body>
+</html>
